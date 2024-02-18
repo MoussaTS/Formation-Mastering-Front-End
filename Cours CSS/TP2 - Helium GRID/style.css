@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:Saira+Condensed:wght@500&display=swap");
+
+*{
+  margin: 0;
+  padding: 5px;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+p{
+  font-size: 0.8rem;
+}
+
+li{
+  list-style: none;
+}
+
+body{
+  min-height: 100vh;
+  background: rgb(34, 32, 32);
+  color: rgb(243, 243, 243);
+}
+
+nav{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px 20px;
+}
+
+nav ul{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 30px auto;
+}
+
+h1{
+  font-size: 5rem;
+}
+
+.header-left-container h3{
+  color: #474dff;
+  font-size: 1.8rem;
+}
+
+.header-right{
+  width: 50%;
+}
+
+#modem{
+  width: 100%;
+  /* centrer une image en grid margin 0 auto + dispaly block et ne pas mettre dans une class en div mais directement la class dans la balide img*/
+  margin: 0 auto;
+}
+
+.infos{
+  background: rgb(12, 12, 12);
+  display: grid;
+  grid-template-columns: 33% 67%;
+  border-radius: 10px;
+}
+
+.infos-left{
+  width: 33%;
+}
+
+.btn-container{
+}
+
+button{
+  padding: 10px 0;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  background: #474dff;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 5px;
+}
+
+.infos-right{
+  width: 67%;
+}
+
+.investors{
+  display: grid;
+  align-items: center;
+  height: 86%;
+}
+
+.img-container{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.img-container img{
+  height: 60px;
+}
