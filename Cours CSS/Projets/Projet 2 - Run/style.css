@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+h2 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+p {
+  margin-bottom: 20px;
+  line-height: 1.5rem;
+  margin-right: 20px;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+button {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 7px 15px;
+  border-radius: 150px;
+  border: 1px solid rgb(216, 216, 216);
+  cursor: pointer;
+  font-weight: 550;
+  font-size: 0.6rem;
+}
+button:hover {
+  color: rgba(0, 223, 223, 0.673);
+}
+.header {
+  margin-top: 50px;
+}
+.header-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 30px 0 0 20px;
+}
+.header-left h1 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+#img-right {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.first-part-container {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+#first-part-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.first-right-part {
+  margin: auto 30px;
+}
+#second-part-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.second-part-container {
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+.second-left-part {
+  margin: 30px auto;
+}
+.formulaire h2 {
+  text-align: center;
+}
