@@ -8,86 +8,101 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="header-container">
-        <div class="header-left">
+    <header>
+      <div class="container">
+        <div>
           <h1>Run</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            facilis totam, reiciendis dolor eos tenetur suscipit ab quisquam
-            perspiciatis sed?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
+            facilis quidem quia quis voluptatum sapiente illum, accusantium iure
+            omnis iste est commodi necessitatibus similique architecto earum
+            ducimus? Corrupti, earum maxime!
           </p>
-          <button>get started</button>
-        </div>
-        <div class="header-right">
-          <div class="header-img">
-            <img
-              id="img-right"
-              src="./assets/img/banner.jpg"
-              alt="bannière de piste de course"
-            />
-          </div>
+          <a href="#" class="button">get started</a>
         </div>
       </div>
-    </div>
+      <div class="img-banner"></div>
+    </header>
 
-    <div class="main-part">
-      <div class="first-part-container">
-        <div class="first-left-part">
-          <div class="img">
-            <img
-              id="first-part-img"
-              src="./assets/img/img-left.jpg"
-              alt="left img"
-            />
-          </div>
-        </div>
-        <div class="first-right-part">
+    <section class="section-1">
+      <div class="img"></div>
+      <div class="container">
+        <div>
           <h2>Magna etiam feugiat</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-            voluptate natus consequatur illo ipsam aliquam eos eveniet ipsum.
-            Maiores sit, enim dicta vel sapiente ad quasi natus consequatur
-            temporibus obcaecati, necessitatibus, earum eos dolore velit dolores
-            officiis facere laudantium autem nisi eius odit corporis? Aut?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis,
+            incidunt vitae? Voluptate corrupti aut quod error, officia
+            voluptates dolores ut autem. Dicta voluptatum eveniet exercitationem
+            earum placeat reiciendis quo sequi? Perspiciatis, pariatur saepe
+            quasi exercitationem quibusdam dolorem atque ea, velit corporis
+            ullam, explicabo tempora praesentium?
           </p>
-          <button>learn more</button>
+          <a href="#" class="button">learn more</a>
         </div>
       </div>
-      <div class="second-part-container">
-        <div class="second-left-part">
+    </section>
+
+    <section class="section-2">
+      <div class="container">
+        <div>
           <h2>Tempus adipiscing</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perspiciatis, minus. Esse vitae ea odio quia quaerat sit illum qui
-            quasi laudantium, consequuntur omnis similique expedita suscipit
-            earum accusamus ipsa eaque voluptate autem magni excepturi error!
-            Nemo excepturi quaerat sit rem, ipsam amet beatae tempore sed.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
+            commodi ducimus iusto, sint laboriosam iste. Officiis eos quae enim
+            sint laborum eaque impedit eum nulla ratione placeat. Animi
+            necessitatibus minus possimus ab voluptatibus illo adipisci numquam
+            delectus? Sed porro officiis vitae dignissimos, animi id aliquam.
           </p>
-          <button>learn more</button>
-        </div>
-        <div class="second-right-part">
-          <div class="img">
-            <img
-              id="second-part-img"
-              src="./assets/img/img-right.jpg"
-              alt="tour eiffel"
-            />
-          </div>
+          <a href="#" class="button">get started</a>
         </div>
       </div>
-    </div>
+      <div class="img"></div>
+    </section>
 
-    <section class="formulaire">
+    <section class="contact">
       <h2>Get in touch</h2>
-      <form action="">
-        <label for="name">Name</label>
-        <input type="text" id="name" />
-        <label for="email">Email</label>
-        <input type="text" id="email" />
-        <label for="Message">Message</label>
-        <textarea for="Message" cols="50" rows="10"></textarea>
+      <form method="post" action="#">
+        <div class="form-grid">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div>
+            <label for="mail">Email</label>
+            <input type="text" id="email" />
+          </div>
+          <div class="textarea">
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+          </div>
+        </div>
+        <input type="submit" class="button" value="Send Message" />
       </form>
     </section>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="far fa-envelope"></i></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
