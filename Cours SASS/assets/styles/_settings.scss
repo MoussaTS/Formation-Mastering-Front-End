@@ -1,0 +1,17 @@
+// variables
+$color1: rgb(44, 134, 44);
+$color2: rgb(48, 78, 187);
+$white: rgb(189, 174, 174);
+$black: rgb(55, 53, 53);
+
+// mixins
+@mixin centerChild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: $black;
+  color: $white;
+}

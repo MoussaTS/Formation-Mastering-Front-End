@@ -1,0 +1,9 @@
+section {
+  height: 400px;
+  border: 1px solid $color2;
+  @include centerChild;
+  p {
+    text-align: center;
+    width: 50%;
+  }
+}
