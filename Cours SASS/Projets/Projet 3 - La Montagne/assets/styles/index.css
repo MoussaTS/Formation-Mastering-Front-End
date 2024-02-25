@@ -1,8 +1,9 @@
 @font-face {
-  font-family: "Inter";
   src: url(../fonts/Inter/Inter-VariableFont_slntwght.ttf);
-  font-family: "Merriweather";
+  font-family: "Inter";
   src: url(../fonts/Merriweather/Merriweather-Italic.ttf);
+  font-family: "Merriweather";
+  font-family: "Merriweather-Italic";
 }
 * {
   margin: 0;
@@ -36,8 +37,8 @@ header div h1 {
 }
 header p {
   text-align: center;
-  font-family: "MerriweatherLight", sans-serif;
-  font-size: 0.7rem;
+  font-family: "Merriweather-Italic", sans-serif;
+  font-size: 0.6rem;
   margin-top: 30px;
 }
 header i {
@@ -101,4 +102,44 @@ nav .social-network ul li {
 }
 nav .social-network ul li a {
   color: rgb(232, 220, 220);
+}
+
+main {
+  text-align: center;
+  background: rgb(232, 220, 220);
+  padding: 50px;
+}
+main h6 {
+  font-size: 0.8rem;
+  font-weight: 200;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 50px;
+}
+main .text {
+  width: 50%;
+  margin: 0 auto;
+}
+main .text h2 {
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  letter-spacing: 1px;
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+main .text p {
+  font-family: "Merriweather-Italic", sans-serif;
+  font-size: 0.6rem;
+  line-height: 25px;
+}
+
+button {
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  font-weight: bold;
+  border: 1px solid rgb(16, 16, 16);
+}
+button:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

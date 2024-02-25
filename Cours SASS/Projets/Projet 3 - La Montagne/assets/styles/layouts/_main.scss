@@ -1,0 +1,28 @@
+main {
+  text-align: center;
+  background: $color1;
+  padding: 50px;
+  h6 {
+    font-size: 0.8rem;
+    font-weight: 200;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 50px;
+  }
+  .text {
+    width: 50%;
+    margin: 0 auto;
+    h2 {
+      text-transform: uppercase;
+      font-size: 2.1rem;
+      letter-spacing: 1px;
+      font-family: "Inter-ExtraBold", sans-serif;
+      font-weight: 700;
+      padding-bottom: 30px;
+    }
+    p {
+      font-family: "Merriweather-Italic", sans-serif;
+      font-size: 0.6rem;
+      line-height: 25px;
+    }
+  }
+}
