@@ -22,7 +22,7 @@ body {
 header {
   color: rgb(232, 220, 220);
   text-align: center;
-  padding: 70px;
+  padding-top: 70px;
 }
 header div {
   width: 80%;
@@ -34,6 +34,8 @@ header div h1 {
   letter-spacing: 5px;
   font-family: "Inter-ExtraBold", sans-serif;
   font-weight: 800;
+  width: 60%;
+  margin: 0 auto;
 }
 header p {
   text-align: center;
@@ -108,6 +110,7 @@ main {
   text-align: center;
   background: rgb(232, 220, 220);
   padding: 50px;
+  color: rgb(16, 16, 16);
 }
 main h6 {
   font-size: 0.8rem;
@@ -139,7 +142,13 @@ button {
   font-size: 0.5rem;
   font-weight: bold;
   border: 1px solid rgb(16, 16, 16);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 button:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: rgb(16, 16, 16);
+  color: rgb(232, 220, 220);
 }/*# sourceMappingURL=index.css.map */
