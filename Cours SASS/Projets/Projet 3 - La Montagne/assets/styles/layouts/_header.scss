@@ -1,0 +1,30 @@
+header {
+  color: $color1;
+  text-align: center;
+  padding: 70px;
+  div {
+    width: 80%;
+    margin: 0 auto;
+    h1 {
+      font-size: 2.1rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-family: "Inter-ExtraBold", sans-serif;
+      font-weight: 800;
+    }
+  }
+  p {
+    text-align: center;
+    font-family: "MerriweatherLight", sans-serif;
+    font-size: 0.7rem;
+    margin-top: 30px;
+  }
+  i {
+    font-size: 0.7rem;
+    border: 1px solid $color1;
+    padding: 10px;
+    border-radius: 70px;
+    display: block;
+    margin: 30px auto 50px;
+  }
+}

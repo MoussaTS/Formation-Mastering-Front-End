@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter/Inter-VariableFont_slntwght.ttf);
+  font-family: "Merriweather";
+  src: url(../fonts/Merriweather/Merriweather-Italic.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background: url(../img/bg.jpg) fixed center/cover;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  color: rgb(232, 220, 220);
+  text-align: center;
+  padding: 70px;
+}
+header div {
+  width: 80%;
+  margin: 0 auto;
+}
+header div h1 {
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-weight: 800;
+}
+header p {
+  text-align: center;
+  font-family: "MerriweatherLight", sans-serif;
+  font-size: 0.7rem;
+  margin-top: 30px;
+}
+header i {
+  font-size: 0.7rem;
+  border: 1px solid rgb(232, 220, 220);
+  padding: 10px;
+  border-radius: 70px;
+  display: block;
+  margin: 30px auto 50px;
+}
+
+nav {
+  background: rgba(196, 186, 186, 0.221);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .pages {
+  font-size: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+nav .pages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .pages ul li {
+  color: rgb(232, 220, 220);
+  font-weight: bold;
+  padding: 10px;
+  font-family: "MerriweatherLight", sans-serif;
+}
+nav .pages ul li:hover {
+  background: rgb(232, 220, 220);
+  color: rgb(16, 16, 16);
+}
+nav .social-network ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .social-network ul li {
+  margin: 0 10px;
+  font-size: 0.7rem;
+}
+nav .social-network ul li a {
+  color: rgb(232, 220, 220);
+}/*# sourceMappingURL=index.css.map */

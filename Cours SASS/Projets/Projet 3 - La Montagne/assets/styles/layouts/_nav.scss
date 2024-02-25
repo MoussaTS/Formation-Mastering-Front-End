@@ -1,0 +1,40 @@
+nav {
+  background: rgba(196, 186, 186, 0.221);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .pages {
+    font-size: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        // width: 200px;
+        color: $color1;
+        font-weight: bold;
+        padding: 10px;
+        font-family: "MerriweatherLight", sans-serif;
+        &:hover {
+          background: $color1;
+          color: $black;
+        }
+      }
+    }
+  }
+  .social-network {
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      li {
+        margin: 0 10px;
+        font-size: 0.7rem;
+        a {
+          color: $color1;
+        }
+      }
+    }
+  }
+}
