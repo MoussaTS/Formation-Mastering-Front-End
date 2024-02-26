@@ -17,6 +17,7 @@ $color1: rgb(232, 220, 220);
 }
 body {
   background: url(../img/bg.jpg) fixed center/cover;
-  width: 80%;
+  max-width: 1300px;
+  text-align: center;
   margin: 0 auto;
 }

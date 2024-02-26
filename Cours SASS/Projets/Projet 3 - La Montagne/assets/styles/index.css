@@ -15,7 +15,8 @@
 
 body {
   background: url(../img/bg.jpg) fixed center/cover;
-  width: 80%;
+  max-width: 1300px;
+  text-align: center;
   margin: 0 auto;
 }
 
@@ -107,22 +108,22 @@ nav .social-network ul li a {
 }
 
 main {
-  text-align: center;
   background: rgb(232, 220, 220);
-  padding: 50px;
+  padding: 20px auto;
   color: rgb(16, 16, 16);
 }
-main h6 {
+main .top-main h6 {
   font-size: 0.8rem;
   font-weight: 200;
   font-family: "Inter", sans-serif;
   margin-bottom: 50px;
+  padding-top: 50px;
 }
-main .text {
+main .top-main .text {
   width: 50%;
   margin: 0 auto;
 }
-main .text h2 {
+main .top-main .text h2 {
   text-transform: uppercase;
   font-size: 2.1rem;
   letter-spacing: 1px;
@@ -130,20 +131,70 @@ main .text h2 {
   font-weight: 700;
   padding-bottom: 30px;
 }
-main .text p {
+main .top-main .text p {
   font-family: "Merriweather-Italic", sans-serif;
   font-size: 0.6rem;
   line-height: 25px;
 }
+main .top-main .main-img img {
+  width: 80%;
+  max-height: 400px;
+  margin: 20px auto;
+}
+
+.bottom-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+@media screen and (max-width: 800px) {
+  .bottom-main {
+    display: block;
+  }
+}
+.bottom-main .bottom-main-container {
+  position: relative;
+}
+.bottom-main .bottom-main-container h6 {
+  margin-top: 100px;
+  font-size: 0.6rem;
+  font-family: "Merriweather-Italic", sans-serif;
+}
+.bottom-main .bottom-main-container h3 {
+  text-transform: uppercase;
+  margin: 10px auto;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.bottom-main .bottom-main-container img {
+  width: 80%;
+  margin-top: 10px;
+}
+.bottom-main .bottom-main-container p {
+  font-family: "Merriweather-Italic", sans-serif;
+  font-size: 0.6rem;
+  line-height: 25px;
+  margin: 10px auto;
+  width: 80%;
+  text-align: left;
+}
 
 button {
-  padding: 5px 20px;
+  padding: 8px 25px;
   text-transform: uppercase;
   font-size: 0.5rem;
   font-weight: bold;
   border: 1px solid rgb(16, 16, 16);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin-bottom: 20px;
 }
 button:hover {
   cursor: pointer;
