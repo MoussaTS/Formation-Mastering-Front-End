@@ -1,100 +1,124 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projet 3 - La Montagne</title>
 
+    <link rel="stylesheet" href="./assets/styles/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
-    <title>Projet 3 - La Montagne</title>
   </head>
   <body>
     <header>
-      <div>
-        <h1>La montagne ça vous gagne</h1>
+      <div class="header-content">
+        <h1>La montage <br />ça vous gagne</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis
+          veniam quis aut rem provident!
+        </p>
+        <span>
+          <a href="#main"><i class="fa-solid fa-arrow-down"></i></a>
+        </span>
       </div>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam velit
-        eveniet quos atque quam beatae?
-      </p>
-      <div class="arrow">
-        <i class="fa-solid fa-arrow-down"></i>
-      </div>
+
       <nav>
-        <div class="pages">
-          <ul>
-            <li>this is massively</li>
-            <li>generic page</li>
-            <li>elements reference</li>
-          </ul>
-        </div>
-        <div class="social-network">
-          <ul>
-            <li>
-              <a href="#"><span class="fa-brands fa-twitter"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="fa-brands fa-facebook"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="fa-brands fa-instagram"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="fa-brands fa-github"></span></a>
-            </li>
-          </ul>
-        </div>
+        <ul class="nav-left">
+          <li>this is massively</li>
+          <li>generic page</li>
+          <li>element reference</li>
+        </ul>
+        <ul class="nav-right">
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-github"></i></li>
+        </ul>
       </nav>
     </header>
 
-    <main>
-      <div class="top-main">
-        <h6>April 25, 2017</h6>
-        <div class="text">
-          <h2>and this is a massive headline</h2>
+    <main id="main">
+      <section class="section-1">
+        <span>April 25, 2017</span>
+        <h2>and this is a <br />massive headline</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+          dignissimos saepe nostrum, optio sequi, sunt numquam omnis sit minima
+          aliquid itaque, expedita vitae debitis magnam!
+        </p>
+        <img src="./assets/img/pic01.jpg" alt="img-hiking" />
+        <button class="btn">full story</button>
+      </section>
+      <section class="section-2">
+        <div class="left-part">
+          <span>April 24, 2017</span>
+          <h3>sed magna <br />ipsum faucibus</h3>
+          <img src="./assets/img/pic02.jpg" alt="forest" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            voluptatum quibusdam totam consectetur! Quas labore nobis quo alias
-            quis, repellat assumenda maxime deleniti ad ea.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            impedit est commodi excepturi tenetur iusto aspernatur cumque
+            doloremque aut! Dolorum molestiae reiciendis sint est recusandae
+            laudantium repellendus veritatis accusamus dolore facilis. Ad
+            explicabo soluta, vel vero voluptas incidunt maxime saepe iste,
+            corporis modi ea? Provident?
           </p>
+          <button class="btn">full story</button>
         </div>
-        <div class="main-img">
-          <img src="./assets/img/pic01.jpg" alt="" />
-        </div>
-        <button>full story</button>
-      </div>
-
-      <div class="bottom-main">
-        <div class="bottom-main-container">
-          <h6>April 24, 2017</h6>
-          <h3>sed magna ipsum faucibus</h3>
-          <div class="img">
-            <img src="./assets/img/pic02.jpg" alt="" />
-          </div>
+        <div class="right-part">
+          <span>April 24, 2017</span>
+          <h3>sed magna <br />ipsum faucibus</h3>
+          <img src="./assets/img/pic03.jpg" alt="forest" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            ipsa temporibus laudantium fugiat voluptatem nam repellat quo animi,
-            neque incidunt?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            impedit est commodi excepturi tenetur iusto aspernatur cumque
+            doloremque aut! Dolorum molestiae reiciendis sint est recusandae
+            laudantium repellendus veritatis accusamus dolore facilis. Ad
+            explicabo soluta, vel vero voluptas incidunt maxime saepe iste,
+            corporis modi ea? Provident?
           </p>
-          <button>full story</button>
+          <button class="btn">full story</button>
         </div>
-        <div class="bottom-main-container">
-          <h6>April 22, 2017</h6>
-          <h3>primis eget impediet lorem</h3>
-          <div class="img-right">
-            <img src="./assets/img/pic03.jpg" alt=""/ >
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            ipsa temporibus laudantium fugiat voluptatem nam repellat quo animi,
-            neque incidunt?
-          </p>
-          <button>full story</button>
-        </div>
-      </div>
+      </section>
     </main>
+
+    <footer>
+      <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name" autocomplete="off" />
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+        <label for="message">Message</label>
+        <textarea id="message"></textarea>
+        <div class="submit-container">
+          <input type="submit" class="btn" value="send message" />
+        </div>
+      </form>
+
+      <div class="infos-contacts">
+        <div>
+          <h3>address</h3>
+          <p>1234 Somewhere Road #87257 <br />Nashville, TN 00000-0000</p>
+        </div>
+        <div>
+          <h3>phone</h3>
+          <p>(000) 000-0000</p>
+        </div>
+        <div>
+          <h3>email</h3>
+          <p>infos@untitled.ltd</p>
+        </div>
+        <div class="social">
+          <h3>Social</h3>
+          <ul>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

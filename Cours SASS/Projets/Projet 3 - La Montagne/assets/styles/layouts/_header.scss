@@ -1,32 +1,118 @@
 header {
-  color: $color1;
-  text-align: center;
-  padding-top: 70px;
-  div {
-    width: 80%;
-    margin: 0 auto;
+  color: $white1;
+  position: relative;
+  min-height: 100vh;
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    // Animation
+    opacity: 0;
+    transform: translateY(40px);
+    animation: headerAnim 1.5s forwards;
+
+    @keyframes headerAnim {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
     h1 {
-      font-size: 2.1rem;
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      font-family: "Inter-ExtraBold", sans-serif;
-      font-weight: 800;
-      width: 60%;
-      margin: 0 auto;
+      @include title;
+      font-size: 4rem;
+      letter-spacing: 6px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 2rem;
+      }
+    }
+    p {
+      margin: 40px auto 60px;
+      font-style: italic;
+      width: 85%;
+    }
+    span {
+      border: 2px solid $white1;
+      border-radius: 50px;
+      height: 60px;
+      width: 60px;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
-  p {
-    text-align: center;
-    font-family: "Merriweather-Italic", sans-serif;
-    font-size: 0.6rem;
-    margin-top: 30px;
-  }
-  i {
-    font-size: 0.7rem;
-    border: 1px solid $color1;
-    padding: 10px;
-    border-radius: 70px;
-    display: block;
-    margin: 30px auto 50px;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.253);
+    color: $white1;
+    width: 85%;
+    height: 65px;
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    ul {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-left {
+      // Animation hover sans hover navbar
+      &:hover li:not(:hover) {
+        background: none;
+        color: $white1;
+      }
+      li {
+        @include title;
+        font-size: 0.7rem;
+        padding: 0 15px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        @media screen and (max-width: 700px) {
+          font-size: 0.5rem;
+        }
+
+        &:first-child {
+          background: $white1;
+          color: $black1;
+        }
+        &:hover {
+          background: $white1;
+          color: $black1;
+        }
+      }
+    }
+    .nav-right {
+      font-size: 1.1rem;
+      min-width: 100px;
+      width: 25%;
+      max-width: 300px;
+      justify-content: space-around;
+      margin-right: 10px;
+
+      @media screen and (max-width: 700px) {
+        display: none;
+      }
+
+      li {
+        cursor: pointer;
+        transition: 0.15s;
+
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
   }
 }

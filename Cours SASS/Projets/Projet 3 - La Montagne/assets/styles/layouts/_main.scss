@@ -1,85 +1,92 @@
 main {
-  background: $color1;
-  padding: 20px auto;
-  color: $black;
-  .top-main {
-    h6 {
-      font-size: 0.8rem;
-      font-weight: 200;
-      font-family: "Inter", sans-serif;
-      margin-bottom: 50px;
-      padding-top: 50px;
-    }
-    .text {
-      width: 50%;
-      margin: 0 auto;
-      h2 {
-        text-transform: uppercase;
-        font-size: 2.1rem;
-        letter-spacing: 1px;
-        font-family: "Inter-ExtraBold", sans-serif;
-        font-weight: 700;
-        padding-bottom: 30px;
-      }
-      p {
-        font-family: "Merriweather-Italic", sans-serif;
-        font-size: 0.6rem;
-        line-height: 25px;
-      }
-    }
-    .main-img {
-      img {
-        width: 80%;
-        max-height: 400px;
-        margin: 20px auto;
-      }
-    }
+  width: 85%;
+  margin: 0 auto 30px;
+  background: $white1;
+  img {
+    width: 100%;
   }
-}
+  .section-1 {
+    width: 80%;
+    margin: 0 auto;
+    span {
+      padding: 70px 0;
+      position: relative;
+      display: block;
 
-.bottom-main {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-  @media screen and (max-width: 800px) {
-    display: block;
-  }
-  .bottom-main-container {
-    position: relative;
-    h6 {
-      margin-top: 100px;
-      font-size: 0.6rem;
-      font-family: "Merriweather-Italic", sans-serif;
+      // double barres grises premiere date
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        width: 37%;
+        height: 1px;
+        background: $grey1;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @media screen and (max-width: 700px) {
+          width: 30%;
+        }
+        @media screen and (max-width: 700px) {
+          width: 24%;
+        }
+      }
+      &::before {
+        left: 0;
+      }
+      &::after {
+        right: 0;
+      }
     }
-    h3 {
-      text-transform: uppercase;
-      margin: 10px auto;
-      font-family: "Inter", sans-serif;
-      font-weight: 700;
-      font-size: 0.9rem;
-    }
-    img {
-      width: 80%;
-      margin-top: 10px;
+    h2 {
+      @include title;
+      font-size: 3rem;
+
+      @media screen and (max-width: 700px) {
+        font-size: 1.5rem;
+      }
     }
     p {
-      font-family: "Merriweather-Italic", sans-serif;
-      font-size: 0.6rem;
-      line-height: 25px;
-      margin: 10px auto;
-      width: 80%;
-      text-align: left;
+      width: 60%;
+      margin: 30px auto;
+      line-height: 35px;
+      font-style: italic;
+      font-size: 0.8;
+    }
+    .btn {
+      margin: 50px 0 90px;
     }
   }
-  // .bottom-main-container::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 1px;
-  //   height: 90%;
-  //   background: rgba(0, 0, 0, 0.082);
-  //   left: 1%;
-  //   top: 60%;
-  //   transform: translateY(-50%);
-  // }
+  .section-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-top: 1px solid $grey1;
+
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
+
+    .left-part,
+    .right-part {
+      padding: 60px;
+
+      span {
+        font-size: 0.75rem;
+      }
+      h3 {
+        margin: 20px 0;
+        @include title;
+        line-height: 28px;
+      }
+      p {
+        text-align: left;
+        line-height: 30px;
+        margin: 30px 0;
+        font-size: 0.8rem;
+      }
+    }
+    .left-part {
+      border-right: 1px solid $grey1;
+    }
+  }
 }
