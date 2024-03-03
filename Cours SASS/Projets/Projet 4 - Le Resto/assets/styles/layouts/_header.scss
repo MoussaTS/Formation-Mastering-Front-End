@@ -1,0 +1,28 @@
+header {
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  color: $white;
+  width: 100%;
+  height: 400px;
+
+  h3 {
+    font-family: "Allura";
+    color: $color1;
+    font-size: 3rem;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: "Poppins";
+    letter-spacing: 8px;
+  }
+
+  img {
+    height: 20px;
+  }
+
+  p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.7rem;
+  }
+}
