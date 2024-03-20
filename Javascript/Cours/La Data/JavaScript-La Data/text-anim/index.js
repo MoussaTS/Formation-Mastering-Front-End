@@ -1,15 +1,15 @@
 const target = document.getElementById("target");
-let wordIndex = 0;
-let letterIndex = 0;
 let array = [
   "apprentit\u00A0développeur",
   "passionné",
-  "à\u00A0la\u00A0recherche\u00A0d'une\u00A0alternance",
+  "en\u00A0recherche\u00A0d'alternance",
 ];
+let wordIndex = 0;
+let letterIndex = 0;
 
 const createLetter = () => {
   const letter = document.createElement("span");
-  target.append(letter);
+  target.appendChild(letter);
 
   letter.textContent = array[wordIndex][letterIndex];
 
