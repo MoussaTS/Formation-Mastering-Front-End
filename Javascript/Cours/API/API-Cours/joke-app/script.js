@@ -7,6 +7,7 @@ function getJoke() {
   fetch("https://api.blablagues.net/?rub=blagues")
     .then((res) => res.json())
     .then((data) => {
+      // data.data.content = chemin dans l'api
       const content = data.data.content;
       console.log(content);
 
