@@ -1,0 +1,77 @@
+{
+  "window.zoomLevel": 0,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.renderWhitespace": "trailing",
+  "editor.linkedEditing": true,
+  "editor.occurrencesHighlight": "off",
+  "editor.suggest.insertMode": "replace",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "files.autoSave": "onFocusChange",
+  "explorer.autoReveal": false,
+  "workbench.tree.indent": 15,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.editor.enablePreview": false,
+  "emmet.triggerExpansionOnTab": false,
+  "git.confirmSync": true,
+  "workbench.colorTheme": "Andromeda",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 22,
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "workbench.iconTheme": "vscode-icons",
+  "explorer.confirmDragAndDrop": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.guides.bracketPairs": true,
+  "javascript.preferences.importModuleSpecifierEnding": "js",
+  "typescript.preferences.importModuleSpecifierEnding": "js",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+
+  "workbench.colorCustomizations": {
+    "[Andromeda]": {
+      "editor.selectionBackground": "#007FFF"
+    },
+    "[Omni Owl (Minimal Italics)]": {
+      "editor.selectionBackground": "#007FFF"
+    }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  "editor.cursorBlinking": "expand",
+  "editor.cursorWidth": 3,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "glassit.alpha": 240,
+  "explorer.confirmDelete": false
+}
